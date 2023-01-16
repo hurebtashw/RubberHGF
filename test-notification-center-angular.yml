@@ -6,7 +6,6 @@ on:
       - 'packages/notification-center-angular/**'
 jobs:
   test:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -23,7 +22,6 @@ jobs:
 
       - uses: pnpm/action-setup@v2.0.1
         with:
-          version: 7.5.0
           run_install: true
 
       - uses: mansagroup/nrwl-nx-action@v3
